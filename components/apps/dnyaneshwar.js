@@ -252,7 +252,7 @@ function Projects() {
             try {
                 const response = await axios.get('https://api.github.com/users/dnyaneshwarshekade/repos', {
                     headers: {
-                        'Authorization': `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`
+                        'Authorization': `token YOUR_GITHUB_PERSONAL_ACCESS_TOKEN`
                     }
                 });
                 const formattedProjects = response.data.map(repo => ({
