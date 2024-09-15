@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga4';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { TfiAgenda } from "react-icons/tfi";
 
 
 export class AboutDnyaneshwar extends Component {
-
     constructor() {
         super();
         this.screens = {};
         this.state = {
-            screen: () => { },
+            screen: () => {},
             active_screen: "about", // by default 'about' screen is active
             navbar: false,
-        }
+        };
     }
 
     componentDidMount() {
@@ -22,8 +22,9 @@ export class AboutDnyaneshwar extends Component {
             "education": <Education />,
             "skills": <Skills />,
             "projects": <Projects />,
+            "certifications": <Certifications />,
             "resume": <Resume />,
-        }
+        };
 
         let lastVisitedScreen = localStorage.getItem("about-section");
         if (lastVisitedScreen === null || lastVisitedScreen === undefined) {
@@ -43,16 +44,15 @@ export class AboutDnyaneshwar extends Component {
         // google analytics
         ReactGA.send({ hitType: "pageview", page: `/${screen}`, title: "Custom Title" });
 
-
         this.setState({
             screen: this.screens[screen],
             active_screen: screen
         });
-    }
+    };
 
     showNavBar = () => {
         this.setState({ navbar: !this.state.navbar });
-    }
+    };
 
     renderNavLinks = () => {
         return (
@@ -62,23 +62,28 @@ export class AboutDnyaneshwar extends Component {
                     <span className=" ml-1 md:ml-2 text-gray-50 ">About Me</span>
                 </div>
                 <div id="education" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "education" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="Dnyaneshwar' education" src="./themes/Yaru/status/education.svg" />
+                    <img className=" w-3 md:w-4" alt="Dnyaneshwar's education" src="./themes/Yaru/status/education.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Education</span>
                 </div>
                 <div id="skills" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "skills" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="Dnyaneshwar' skills" src="./themes/Yaru/status/skills.svg" />
+                    <img className=" w-3 md:w-4" alt="Dnyaneshwar's skills" src="./themes/Yaru/status/skills.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Skills</span>
                 </div>
                 <div id="projects" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "projects" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="Dnyaneshwar' projects" src="./themes/Yaru/status/projects.svg" />
+                    <img className=" w-3 md:w-4" alt="Dnyaneshwar's projects" src="./themes/Yaru/status/projects.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Projects</span>
                 </div>
                 <div id="resume" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "resume" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="Dnyaneshwar's-Resume.pdf" src="./themes/Yaru/status/download.svg" />
+                    <img className=" w-3 md:w-4" alt="Dnyaneshwar's Resume" src="./themes/Yaru/status/download.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Resume</span>
                 </div>
-                <div className='my-0.5 w-28 md:w-full h-8 px-2 md:px-2.5 flex' >
-                <iframe src="https://github.com/sponsors/dnyaneshwarshekade/button" title="Sponsor Dnyaneshwarshekade" width={"100%"} height={"100%"} ></iframe>                </div>
+                <div id="certifications" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "certifications" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
+                    <TfiAgenda className="w-4 h-4 text-gray-50" />
+                    <span className=" ml-1 md:ml-2 text-gray-50 ">Certifications</span>
+                </div>
+                <div className='my-0.5 w-28 md:w-full h-8 px-2 md:px-2.5 flex'>
+                    <iframe src="https://github.com/sponsors/dnyaneshwarshekade/button" title="Sponsor Dnyaneshwarshekade" width={"100%"} height={"100%"}></iframe>
+                </div>
             </>
         );
     }
@@ -344,6 +349,74 @@ function Projects() {
         </>
     );
 }
+
+function Certifications() {
+    const certifications = [
+        {
+            title: "Introduction to Generative AI",
+            issuer: "Google Cloud",
+            grade: "100%",
+            certificateLink: "https://coursera.org/share/0f8f0b8b26651dfefeab226d9c2d950c",
+        },
+        {
+            title: "System Administration and IT Infrastructure Services",
+            issuer: "Google",
+            grade: "90.74%",
+            certificateLink: "https://coursera.org/share/0bded1be219e9fb400cec614bb4365df",
+        },
+        {
+            title: "Deploy a complete Wordpress Website in Microsoft Azure Cloud",
+            issuer: "Deprecated Guided Projects",
+            grade: "80%",
+            certificateLink: "https://www.coursera.org/account/accomplishments/records/MZ9QBNHVZE7P", // Replace with the actual link if available
+        },
+        {
+            title: "Introduction to Microsoft Azure Cloud Services",
+            issuer: "Microsoft",
+            grade: "89.58%",
+            certificateLink: "https://www.coursera.org/account/accomplishments/records/LQ9MUMSSB7HZ", // Replace with the actual link if available
+        },
+        {
+            title: "Command Line in Linux",
+            issuer: "Coursera Project Network",
+            grade: "80%",
+            certificateLink: "https://www.coursera.org/account/accomplishments/records/6V9RFJZDPRAC", // Replace with the actual link if available
+        },
+        {
+            title: "Technical Support Fundamentals",
+            issuer: "Google",
+            grade: "97.63%",
+            certificateLink: "https://www.coursera.org/account/accomplishments/records/3AQGZAGJB2TV", // Replace with the actual link if available
+        },
+    ];
+
+    return (
+        <div className="p-4">
+            <h1 className="text-xl font-bold mb-4">Certifications</h1>
+            {certifications.map((cert, index) => (
+                <div key={index} className="mb-6">
+                    <div className="flex items-center mb-2">
+                        <div>
+                            <p className="font-semibold">{cert.title}</p>
+                            <p className="text-sm text-gray-600">Issued by: {cert.issuer}</p>
+                            <p className="text-sm text-gray-600">Grade Achieved: {cert.grade}</p>
+                            <a
+                                href={cert.certificateLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 underline"
+                            >
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            ))}
+        </div>
+    );
+}
+
 function Resume() {
     return (
         <iframe className="h-full w-full" src="./files/Dnyaneshwar's-Resume.pdf" title="Dnyaneshwar Shekade Resume" frameBorder="0"></iframe>
