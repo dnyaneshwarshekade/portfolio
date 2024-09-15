@@ -44,7 +44,7 @@ export default function Meta() {
             <meta property="og:locale" content="en_IN" />
             <meta property="og:type" content="website" />
 
-            <link rel="icon" href="/images/logos/fevicon.svg" />
+            <link rel="icon" href="/images/logos/fevicon.png" />
             <link rel="apple-touch-icon" href="/images/logos/logo.png" />
             <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" as="style" />
             <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />

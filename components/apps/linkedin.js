@@ -8,7 +8,7 @@ const LinkedIn = () => {
       <h1>LinkedIn Profile</h1>
       <p>
         Welcome to Dnyaneshwar Shekade's LinkedIn profile. 
-        <a href="https://www.linkedin.com/in/dnyaneshwar-shekade" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/dnyaneshwarshekade" target="_blank" rel="noopener noreferrer">
           Visit LinkedIn Profile
         </a>
       </p>
