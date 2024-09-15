@@ -392,30 +392,37 @@ function Certifications() {
 
     return (
         <div className="p-4">
-            <h1 className="text-xl font-bold mb-4">Certifications</h1>
+            <div className="font-medium relative text-2xl mt-2 md:mt-4 mb-4">
+                Certifications
+                <div className="absolute pt-px bg-white mt-px top-full w-full">
+                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
+                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
+                </div>
+            </div>
             {certifications.map((cert, index) => (
-                <div key={index} className="mb-6">
-                    <div className="flex items-center mb-2">
-                        <div>
-                            <p className="font-semibold">{cert.title}</p>
-                            <p className="text-sm text-gray-600">Issued by: {cert.issuer}</p>
-                            <p className="text-sm text-gray-600">Grade Achieved: {cert.grade}</p>
+                <div key={index} className="w-full py-1 px-2 my-2 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
+                    <div className="flex flex-wrap justify-between items-center">
+                        <div className="flex flex-col">
+                            <div className="text-base md:text-lg font-semibold">{cert.title}</div>
+                            <div className="text-gray-300 text-sm">Issued by: {cert.issuer}</div>
+                            <div className="text-gray-300 text-sm">Grade Achieved: {cert.grade}</div>
                             <a
                                 href={cert.certificateLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-500 underline"
+                                className="text-blue-500 underline mt-1"
                             >
                                 View Certificate
                             </a>
                         </div>
                     </div>
-                    <hr />
+                    <hr className="my-2 border-gray-300" />
                 </div>
             ))}
         </div>
     );
 }
+
 
 function Resume() {
     return (
