@@ -216,21 +216,22 @@ function Skills() {
                     I have extensive experience in web hosting and server management.
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div>My expertise includes <strong className="text-ubt-gedit-orange">Linux server administration, Web Hosting Application Support & DevOps</strong></div>
+                    <div>
+                        My expertise includes <strong className="text-ubt-gedit-orange">Linux server administration, Web Hosting Application Support & DevOps</strong>.
+                    </div>
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div>I have extensive experience in both <strong className="text-ubt-gedit-orange">application support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Python, and bash Scripting. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.</div>
-                    <div>In terms of security, I am well-versed in SSL/TLS setup using Let's Encrypt and OpenSSL, and server management tools like phpMyAdmin and Softaculous. I have hands-on experience with firewalls like CSF, Fail2Ban, and handling FTP servers, cron jobs, and automated backups.</div>
-                    <div>Additionally, my work with server virtualization is primarily through Virtualizor, managing platforms such as KVM, Xen, OpenVZ, LXC, and Proxmox. I have dealt with storage technologies like LVM, Ceph, and NFS, and implemented robust networking, security, and backup solutions in virtual environments.</div>
-                </li>
-                <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div>I am also proficient in <strong className="text-ubt-gedit-orange">Windows administration</strong> and desktop support.</div>
-                    <div>In desktop support, I am highly familiar with operating systems (Windows, macOS, Linux), remote support tools like TeamViewer and AnyDesk, network security (Active Directory, VPNs, firewalls), hardware troubleshooting, software deployment, patch management, antivirus solutions, cloud services, user access control, and virtualization platforms like VMware and Hyper-V. I also have experience with helpdesk systems such as ServiceNow, Jira, and Zendesk, along with managing office suites like Office 365 and Google Workspace.</div>
+                    <div>
+                        I have extensive experience in both <strong className="text-ubt-gedit-orange">application support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Python, and bash scripting. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.
+                    </div>
+                    <div>
+                        In terms of security, I am well-versed in SSL/TLS setup using Let's Encrypt and OpenSSL, and server management tools like phpMyAdmin and Softaculous. I have hands-on experience with firewalls like CSF, Fail2Ban, and handling FTP servers, cron jobs, and automated backups.
+                    </div>
+                    <div>
+                        Additionally, my work with server virtualization is primarily through Virtualizor, managing platforms such as KVM, Xen, OpenVZ, LXC, and Proxmox. I have dealt with storage technologies like LVM, Ceph, and NFS, and implemented robust networking, security, and backup solutions in virtual environments.
+                    </div>
                 </li>
             </ul>
-            <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-            This are some of <strong className="text-ubt-gedit-orange">Keyskills & familier technologies</strong>
-            </li>
             <div className="w-full md:w-10/12 flex mt-4">
                 <div className="text-sm text-center md:text-base w-1/2 font-bold">Linux Server Management Technologies</div>
                 <div className="text-sm text-center md:text-base w-1/2 font-bold">Application & Web Hosting Technologies</div>
@@ -246,7 +247,6 @@ function Skills() {
                         <img className="m-1" src="https://img.shields.io/badge/-Virtualizor-FFAA00?style=flat&logo=virtualizor&logoColor=ffffff" alt="virtualizor" />
                         <img className="m-1" src="https://img.shields.io/badge/-CSF-888888?style=flat&logo=shield&logoColor=ffffff" alt="csf" />
                         <img className="m-1" src="https://img.shields.io/badge/-AlmaLinux-0C5E9A?style=flat&logo=almalinux&logoColor=ffffff" alt="almalinux" />
-
                     </div>
                 </div>
                 <div className="px-2 flex flex-wrap items-start w-1/2">
@@ -270,10 +270,24 @@ function Skills() {
                     <img className="inline ml-1" src="https://img.shields.io/badge/-Linux%20Server%20Management%20and%20Virtualization-0078D6?style=plastic&logo=linux&logoColor=ffffff" alt="linux server management and virtualization" />
                     <span>!</span>
                 </li>
+                <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
+                    <div>I am also proficient in <strong className="text-ubt-gedit-orange">Windows administration</strong> and desktop support.</div>
+                    <div>
+                        In desktop support, I am highly familiar with operating systems (Windows, macOS, Linux), remote support tools like TeamViewer and AnyDesk, network security (Active Directory, VPNs, firewalls), hardware troubleshooting, software deployment, patch management, antivirus solutions, cloud services, user access control, and virtualization platforms like VMware and Hyper-V. I also have experience with helpdesk systems such as ServiceNow, Jira, and Zendesk, along with managing office suites like Office 365 and Google Workspace.
+                    </div>
+                    <div className="flex flex-wrap">
+                        <img className="m-1" src="https://img.shields.io/badge/-Desktop%20Support%20Engineer-4CAF50?style=flat&logo=desktop&logoColor=ffffff" alt="desktop support engineer" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Troubleshooting-F44336?style=flat&logo=tools&logoColor=ffffff" alt="troubleshooting" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Remote%20Support-2196F3?style=flat&logo=teamviewer&logoColor=ffffff" alt="remote support" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Windows%20Admin-0078D6?style=flat&logo=microsoft&logoColor=ffffff" alt="windows administration" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Hardware%20Support-FF9800?style=flat&logo=hardware&logoColor=ffffff" alt="hardware support" />
+                    </div>
+                </li>
             </ul>
         </>
     );
 }
+
 
 //Project of Dnyaneshwar
 
