@@ -116,6 +116,7 @@ export const displayAboutDnyaneshwar = () => {
     return <AboutDnyaneshwar />;
 }
 
+//abut the Dnyaneshwar
 
 function About() {
     return (
@@ -153,6 +154,8 @@ function About() {
         </>
     )
 }
+
+//eEducation of Dnyaneshwar
 function Education() {
     return (
         <>
@@ -197,6 +200,7 @@ function Education() {
     )
 }
 
+//Skills of Dnyaneshwar 
 function Skills() {
     return (
         <>
@@ -212,50 +216,65 @@ function Skills() {
                     I have extensive experience in web hosting and server management.
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div> My expertise includes <strong className="text-ubt-gedit-orange">DevOps, virtualization technologies, and Linux server administration!</strong></div>
+                    <div>My expertise includes <strong className="text-ubt-gedit-orange">Linux server administration, Web Hosting Application Support & DevOps</strong></div>
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div> I am also proficient in <strong className="text-ubt-gedit-orange">Windows administration</strong> and desktop support.</div>
+                    <div>I have extensive experience in both <strong className="text-ubt-gedit-orange">application support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Perl, Python, and Ruby. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.</div>
+                    <div>In terms of security, I am well-versed in SSL/TLS setup using Let's Encrypt and OpenSSL, and server management tools like phpMyAdmin and Softaculous. I have hands-on experience with firewalls like CSF, Fail2Ban, and handling FTP servers, cron jobs, and automated backups.</div>
+                    <div>Additionally, my work with server virtualization is primarily through Virtualizor, managing platforms such as KVM, Xen, OpenVZ, LXC, and Proxmox. I have dealt with storage technologies like LVM, Ceph, and NFS, and implemented robust networking, security, and backup solutions in virtual environments.</div>
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div> I have extensive experience in both <strong className="text-ubt-gedit-orange">application Support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Perl, Python, and Ruby. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.</div>
-                    <div> In terms of security, I am well-versed in SSL/TLS setup using Let's Encrypt and OpenSSL, and server management tools like phpMyAdmin and Softaculous. I have hands-on experience with firewalls like CSF, Fail2Ban, and handling FTP servers, cron jobs, and automated backups.</div>
-                    <div> Additionally, my work with server virtualization is primarily through Virtualizor, managing platforms such as KVM, Xen, OpenVZ, LXC, and Proxmox. I have dealt with storage technologies like LVM, Ceph, and NFS, and implemented robust networking, security, and backup solutions in virtual environments.</div>
-                    </li>
-
-                    <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">   
-                    <div> In desktop support, I am highly familiar with operating systems (Windows, macOS, Linux), remote support tools like TeamViewer and AnyDesk, network security (Active Directory, VPNs, firewalls), hardware troubleshooting, software deployment, patch management, antivirus solutions, cloud services, user access control, and virtualization platforms like VMware and Hyper-V. I also have experience with helpdesk systems such as ServiceNow, Jira, and Zendesk, along with managing office suites like Office 365 and Google Workspace.</div>
+                    <div>I am also proficient in <strong className="text-ubt-gedit-orange">Windows administration</strong> and desktop support.</div>
+                    <div>In desktop support, I am highly familiar with operating systems (Windows, macOS, Linux), remote support tools like TeamViewer and AnyDesk, network security (Active Directory, VPNs, firewalls), hardware troubleshooting, software deployment, patch management, antivirus solutions, cloud services, user access control, and virtualization platforms like VMware and Hyper-V. I also have experience with helpdesk systems such as ServiceNow, Jira, and Zendesk, along with managing office suites like Office 365 and Google Workspace.</div>
                 </li>
             </ul>
+
             <div className="w-full md:w-10/12 flex mt-4">
-                <div className="text-sm text-center md:text-base w-1/2 font-bold">Technologies</div>
-                <div className="text-sm text-center md:text-base w-1/2 font-bold">Resources</div>
+                <div className="text-sm text-center md:text-base w-1/2 font-bold">Linux Server Management Technologies</div>
+                <div className="text-sm text-center md:text-base w-1/2 font-bold">Application & Web Hosting Technologies</div>
             </div>
             <div className="w-full md:w-10/12 flex justify-center items-start font-bold text-center">
                 <div className="px-2 w-1/2">
                     <div className="flex flex-wrap justify-center items-start w-full mt-2">
-                        <a href="https://www.webhostingtalk.com/" target="_blank" rel="noreferrer">
-                            <img className="m-1" src="https://img.shields.io/badge/Web_Hosting-000000?style=flat&logo=cloud&logoColor=white" alt="web hosting" />
-                        </a>
-                        <a href="https://www.atlassian.com/devops" target="_blank" rel="noreferrer">
-                            <img className="m-1" src="https://img.shields.io/badge/DevOps-000000?style=flat&logo=devops&logoColor=white" alt="DevOps" />
-                        </a>
-                        <a href="https://www.vmware.com/solutions/virtualization.html" target="_blank" rel="noreferrer">
-                            <img className="m-1" src="https://img.shields.io/badge/Virtualization-000000?style=flat&logo=vmware&logoColor=white" alt="Virtualization" />
-                        </a>
-                        <a href="https://www.linuxfoundation.org/" target="_blank" rel="noreferrer">
-                            <img className="m-1" src="https://img.shields.io/badge/Linux-000000?style=flat&logo=linux&logoColor=white" alt="Linux" />
-                        </a>
-                        <a href="https://docs.microsoft.com/en-us/windows-server/" target="_blank" rel="noreferrer">
-                            <img className="m-1" src="https://img.shields.io/badge/Windows_Admin-000000?style=flat&logo=windows&logoColor=white" alt="Windows Administration" />
-                        </a>
+                        <img className="m-1" src="https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=000000" alt="linux" />
+                        <img className="m-1" src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" alt="ubuntu" />
+                        <img className="m-1" src="https://img.shields.io/badge/-CentOS-262577?style=flat&logo=centos&logoColor=ffffff" alt="centos" />
+                        <img className="m-1" src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=ffffff" alt="docker" />
+                        <img className="m-1" src="https://img.shields.io/badge/KVM-CC0000?style=flat&logo=kvm&logoColor=ffffff" alt="kvm" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Proxmox-E57000?style=flat&logo=proxmox&logoColor=ffffff" alt="proxmox" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Virtualizor-FFAA00?style=flat&logo=virtualizor&logoColor=ffffff" alt="virtualizor" />
+                        <img className="m-1" src="https://img.shields.io/badge/-CSF-888888?style=flat&logo=shield&logoColor=ffffff" alt="csf" />
+                        <img className="m-1" src="https://img.shields.io/badge/-AlmaLinux-0C5E9A?style=flat&logo=almalinux&logoColor=ffffff" alt="almalinux" />
+
+                    </div>
+                </div>
+                <div className="px-2 flex flex-wrap items-start w-1/2">
+                    <div className="flex flex-wrap justify-center items-start w-full mt-2">
+                        <img className="m-1" src="https://img.shields.io/badge/-Apache-D22128?style=flat&logo=apache&logoColor=ffffff" alt="apache" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Nginx-269539?style=flat&logo=nginx&logoColor=ffffff" alt="nginx" />
+                        <img className="m-1" src="https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=ffffff" alt="mysql" />
+                        <img className="m-1" src="https://img.shields.io/badge/-MariaDB-003545?style=flat&logo=mariadb&logoColor=ffffff" alt="mariadb" />
+                        <img className="m-1" src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=ffffff" alt="php" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Webuzo-34A853?style=flat&logo=webuzo&logoColor=ffffff" alt="webuzo" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Softaculous-2E69F7?style=flat&logo=softaculous&logoColor=ffffff" alt="softaculous" />
+                        <img className="m-1" src="https://img.shields.io/badge/-SSL/TLS-333333?style=flat&logo=lock&logoColor=ffffff" alt="ssl/tls" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=ffffff" alt="python" />
                     </div>
                 </div>
             </div>
+
+            <ul className="tracking-tight text-sm md:text-base w-10/12 emoji-list mt-4">
+                <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
+                    <span>And of course,</span> 
+                    <img className="inline ml-1" src="http://img.shields.io/badge/-Linux-0078D6?style=plastic&logo=linux&logoColor=ffffff" alt="dnyaneshwar linux" /> 
+                    <span>!</span>
+                </li>
+            </ul>
         </>
     );
 }
 
+//Project of Dnyaneshwar
 
 function Projects() {
     const [projects, setProjects] = useState([]);
