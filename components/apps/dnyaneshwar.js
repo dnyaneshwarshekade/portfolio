@@ -221,6 +221,9 @@ function Skills() {
                     <div> I have extensive experience in both <strong className="text-ubt-gedit-orange">application Support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Perl, Python, and Ruby. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.</div>
                     <div> In terms of security, I am well-versed in SSL/TLS setup using Let's Encrypt and OpenSSL, and server management tools like phpMyAdmin and Softaculous. I have hands-on experience with firewalls like CSF, Fail2Ban, and handling FTP servers, cron jobs, and automated backups.</div>
                     <div> Additionally, my work with server virtualization is primarily through Virtualizor, managing platforms such as KVM, Xen, OpenVZ, LXC, and Proxmox. I have dealt with storage technologies like LVM, Ceph, and NFS, and implemented robust networking, security, and backup solutions in virtual environments.</div>
+                    </li>
+
+                    <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">   
                     <div> In desktop support, I am highly familiar with operating systems (Windows, macOS, Linux), remote support tools like TeamViewer and AnyDesk, network security (Active Directory, VPNs, firewalls), hardware troubleshooting, software deployment, patch management, antivirus solutions, cloud services, user access control, and virtualization platforms like VMware and Hyper-V. I also have experience with helpdesk systems such as ServiceNow, Jira, and Zendesk, along with managing office suites like Office 365 and Google Workspace.</div>
                 </li>
             </ul>
