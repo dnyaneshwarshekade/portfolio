@@ -126,7 +126,7 @@ function About() {
             </div>
             <div className=" mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
                 <div>my name is <span className="font-bold">Dnyaneshwar Shekade</span> ,</div>
-                <div className="font-normal ml-1">I'm a <span className="text-blue-600 font-bold">Linux Sever & DevOps Engineer!</span></div>
+                <div className="font-normal ml-1">I'm a <span className="text-blue-600 font-bold">Linux Server & DevOps Engineer!</span></div>
             </div>
             <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
@@ -134,17 +134,17 @@ function About() {
             </div>
             <ul className="mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
                 <li className="list-pc">
-                I am a <span className="font-medium">Post Graduate Person</span> currently pursuing a career in Law. With over 2 years of experience in various IT companies, including <u className='cursor-pointer'>
-                <a href="https://ril.com" target="_blank">Reliance Industries Limited</a>
+                I am a <span className="font-medium">Post Graduate Person</span> have a over 2 years of experience in various IT companies, including <u className='cursor-pointer'>
+                <a href="https://www.ril.com" target="_blank">Reliance Industries Limited</a>
                 </u> and <u className='cursor-pointer'>
                 <a href="https://www.softaculous.com/" target="_blank">Softaculous Limited</a>
-            </u>, I am now seeking opportunities as a DevOps Engineer. Feel free to reach out to me at <a className='text-underline' href='mailto:shekade31@gmail.com'><u>@shekade31@gmail.com</u></a> :)
+            </u>, I am now seeking opportunities as a DevOps Engineer. Feel free to reach out to me at <a className='text-underline' href='mailto:shekade31@gmail.com'><u>@shekade31@gmail.com</u></a> 
     </li>
     <li className="mt-3 list-building">
-        I take pride in optimizing and automating infrastructure to enhance system performance and reliability.
+        I take pride in optimizing and automating infrastructure to enhance system performance and reliability with the help of server management and web hosting.
     </li>
     <li className="mt-3 list-time">
-        Outside of my professional work, I enjoy reading technical literature, playing Cricket, and watching <a href="https://www.youtube.com/channel/UCFv17ujCwDDPWWTVorWZejg" target="_blank" rel="noreferrer">Tom Scott's videos</a>.
+        Outside of my professional work, I enjoy reading technical literature, playing Cricket, and watching <a href="https://www.youtube.com/channel/UCFv17ujCwDDPWWTVorWZejg" target="_blank" rel="noreferrer">youtube videos</a>.
     </li>
     <li className="mt-3 list-star">
         I also have a keen interest in Deep Learning and Computer Vision,AI,open source applications and continuously exploring new advancements in these fields.
