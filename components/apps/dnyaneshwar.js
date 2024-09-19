@@ -125,7 +125,7 @@ function About() {
             </div>
             <div className=" mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
                 <div>my name is <span className="font-bold">Dnyaneshwar Shekade</span> ,</div>
-                <div className="font-normal ml-1">I'm a <span className="text-blue-600 font-bold">Cloud Engineer!</span></div>
+                <div className="font-normal ml-1">I'm a <span className="text-blue-600 font-bold">Linux Sever & DevOps Engineer!</span></div>
             </div>
             <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
@@ -143,7 +143,7 @@ function About() {
         I take pride in optimizing and automating infrastructure to enhance system performance and reliability.
     </li>
     <li className="mt-3 list-time">
-        Outside of my professional work, I enjoy reading technical literature, playing Minecraft, and watching <a href="https://www.youtube.com/channel/UCFv17ujCwDDPWWTVorWZejg" target="_blank" rel="noreferrer">Tom Scott's videos</a>.
+        Outside of my professional work, I enjoy reading technical literature, playing Cricket, and watching <a href="https://www.youtube.com/channel/UCFv17ujCwDDPWWTVorWZejg" target="_blank" rel="noreferrer">Tom Scott's videos</a>.
     </li>
     <li className="mt-3 list-star">
         I also have a keen interest in Deep Learning and Computer Vision,AI,open source applications and continuously exploring new advancements in these fields.
