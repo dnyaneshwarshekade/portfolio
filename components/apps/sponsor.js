@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+import { FaGithub, FaCoffee } from 'react-icons/fa'; // Import React Icons
 
 export class Sponsor extends Component {
     constructor() {
@@ -7,17 +7,22 @@ export class Sponsor extends Component {
         this.sponsorItems = [
             {
                 name: "Sponsor on GitHub",
-                icon: "/images/logos/github-sponsor.png", // Correct path to public folder
+                icon: <FaGithub size={64} />, // Use React Icons component
                 url: "https://github.com/sponsors/dnyaneshwarshekade"
+            },
+            {
+                name: "Buy Me a Coffee",
+                icon: <FaCoffee size={64} />, // Use React Icons component
+                url: "https://buymeacoffee.com/dnyaneshwarshekade"
             }
         ];
     }
 
     focusFile = (e) => {
         // icon
-        $(e.target).children().get(0).classList.toggle("opacity-60");
+        e.target.querySelector('svg').classList.toggle("opacity-60");
         // file name
-        $(e.target).children().get(1).classList.toggle("bg-ub-orange");
+        e.target.querySelector('span').classList.toggle("bg-ub-orange");
     }
 
     openSponsorLink = (url) => {
@@ -33,7 +38,7 @@ export class Sponsor extends Component {
                             return (
                                 <div key={index} tabIndex="1" onFocus={this.focusFile} onBlur={this.focusFile} className="flex flex-col items-center text-sm outline-none w-16 my-2 mx-4" onClick={() => this.openSponsorLink(item.url)}>
                                     <div className="w-16 h-16 flex items-center justify-center">
-                                        <img src={item.icon} alt="GitHub Sponsor Icon" />
+                                        {item.icon} {/* Render React Icon component */}
                                     </div>
                                     <span className="text-center rounded px-0.5">{item.name}</span>
                                 </div>
@@ -64,5 +69,5 @@ export class Sponsor extends Component {
 export default Sponsor;
 
 export const displaySponsor = () => {
-    return <Sponsor> </Sponsor>;
+    return <Sponsor />;
 }

@@ -7,6 +7,7 @@ import { displayTrash } from './components/apps/trash';
 import { displayGedit } from './components/apps/gedit';
 import { displayAboutDnyaneshwar } from './components/apps/dnyaneshwar';
 import { displayTerminalCalc } from './components/apps/calc';
+import { displaySponsor } from './components/apps/sponsor';
 
 const apps = [
     {
@@ -90,6 +91,17 @@ const apps = [
         desktop_shortcut: true,
         screen: displayGedit,
     },
+    {
+        id: "sponser",
+        title: "Sponser Dnyaneshwarshekde",
+        icon: './themes/Yaru/apps/sponser.jpeg',
+        disabled: false,
+        favourite: false,
+        desktop_shortcut: true,
+        screen: displaySponsor,
+    },
+
+
 ]
 
 export default apps;
