@@ -219,7 +219,7 @@ function Skills() {
                     <div>My expertise includes <strong className="text-ubt-gedit-orange">Linux server administration, Web Hosting Application Support & DevOps</strong></div>
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div>I have extensive experience in both <strong className="text-ubt-gedit-orange">application support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Perl, Python, and Ruby. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.</div>
+                    <div>I have extensive experience in both <strong className="text-ubt-gedit-orange">application support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Python, and bash Scripting. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.</div>
                     <div>In terms of security, I am well-versed in SSL/TLS setup using Let's Encrypt and OpenSSL, and server management tools like phpMyAdmin and Softaculous. I have hands-on experience with firewalls like CSF, Fail2Ban, and handling FTP servers, cron jobs, and automated backups.</div>
                     <div>Additionally, my work with server virtualization is primarily through Virtualizor, managing platforms such as KVM, Xen, OpenVZ, LXC, and Proxmox. I have dealt with storage technologies like LVM, Ceph, and NFS, and implemented robust networking, security, and backup solutions in virtual environments.</div>
                 </li>
@@ -228,7 +228,9 @@ function Skills() {
                     <div>In desktop support, I am highly familiar with operating systems (Windows, macOS, Linux), remote support tools like TeamViewer and AnyDesk, network security (Active Directory, VPNs, firewalls), hardware troubleshooting, software deployment, patch management, antivirus solutions, cloud services, user access control, and virtualization platforms like VMware and Hyper-V. I also have experience with helpdesk systems such as ServiceNow, Jira, and Zendesk, along with managing office suites like Office 365 and Google Workspace.</div>
                 </li>
             </ul>
-
+            <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
+            This are some of <strong className="text-ubt-gedit-orange">Keyskills & familier technologies</strong>
+            </li>
             <div className="w-full md:w-10/12 flex mt-4">
                 <div className="text-sm text-center md:text-base w-1/2 font-bold">Linux Server Management Technologies</div>
                 <div className="text-sm text-center md:text-base w-1/2 font-bold">Application & Web Hosting Technologies</div>
@@ -236,7 +238,6 @@ function Skills() {
             <div className="w-full md:w-10/12 flex justify-center items-start font-bold text-center">
                 <div className="px-2 w-1/2">
                     <div className="flex flex-wrap justify-center items-start w-full mt-2">
-                        <img className="m-1" src="https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=000000" alt="linux" />
                         <img className="m-1" src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" alt="ubuntu" />
                         <img className="m-1" src="https://img.shields.io/badge/-CentOS-262577?style=flat&logo=centos&logoColor=ffffff" alt="centos" />
                         <img className="m-1" src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=ffffff" alt="docker" />
@@ -266,7 +267,7 @@ function Skills() {
             <ul className="tracking-tight text-sm md:text-base w-10/12 emoji-list mt-4">
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
                     <span>And of course,</span> 
-                    <img className="inline ml-1" src="http://img.shields.io/badge/-Linux-0078D6?style=plastic&logo=linux&logoColor=ffffff" alt="dnyaneshwar linux" /> 
+                    <img className="inline ml-1" src="https://img.shields.io/badge/-Linux%20Server%20Management%20and%20Virtualization-0078D6?style=plastic&logo=linux&logoColor=ffffff" alt="linux server management and virtualization" />
                     <span>!</span>
                 </li>
             </ul>
