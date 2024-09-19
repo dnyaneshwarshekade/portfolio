@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaGithub, FaCoffee } from 'react-icons/fa'; // Import React Icons
+import { FaGithub } from 'react-icons/fa'; // Only import the needed icon
 
 export class Sponsor extends Component {
     constructor() {
@@ -7,12 +7,12 @@ export class Sponsor extends Component {
         this.sponsorItems = [
             {
                 name: "Sponsor on GitHub",
-                icon: <FaGithub size={64} />, // Use React Icons component
+                icon: <FaGithub size={64} />, // Use React Icons component for GitHub
                 url: "https://github.com/sponsors/dnyaneshwarshekade"
             },
             {
                 name: "Buy Me a Coffee",
-                icon: <FaCoffee size={64} />, // Use React Icons component
+                icon: <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width={100} height={250} />, // Use the image for coffee
                 url: "https://buymeacoffee.com/dnyaneshwarshekade"
             }
         ];
@@ -20,7 +20,7 @@ export class Sponsor extends Component {
 
     focusFile = (e) => {
         // icon
-        e.target.querySelector('svg').classList.toggle("opacity-60");
+        e.target.querySelector('img, svg').classList.toggle("opacity-60");
         // file name
         e.target.querySelector('span').classList.toggle("bg-ub-orange");
     }
@@ -38,7 +38,7 @@ export class Sponsor extends Component {
                             return (
                                 <div key={index} tabIndex="1" onFocus={this.focusFile} onBlur={this.focusFile} className="flex flex-col items-center text-sm outline-none w-16 my-2 mx-4" onClick={() => this.openSponsorLink(item.url)}>
                                     <div className="w-16 h-16 flex items-center justify-center">
-                                        {item.icon} {/* Render React Icon component */}
+                                        {item.icon} {/* Render React Icon or image */}
                                     </div>
                                     <span className="text-center rounded px-0.5">{item.name}</span>
                                 </div>
