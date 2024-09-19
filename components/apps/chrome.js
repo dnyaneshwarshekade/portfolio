@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 export class Chrome extends Component {
     constructor() {
         super();
-        this.home_url = 'https://www.agni-byte.com'; // Set the default home URL to AgniByte
+        this.home_url = 'https://github.com/dnyaneshwarshekade';
         this.state = {
-            url: 'https://www.agni-byte.com', // Default to AgniByte
-            display_url: "https://www.agni-byte.com", // Default display URL
+            url: 'https://github.com/dnyaneshwarshekade',
+            display_url: "https://github.com/dnyaneshwarshekade", 
         }
     }
 
