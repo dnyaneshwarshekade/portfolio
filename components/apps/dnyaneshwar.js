@@ -197,15 +197,14 @@ function Education() {
     )
 }
 
-
 function Skills() {
     return (
         <>
             <div className="font-medium relative text-2xl mt-2 md:mt-4 mb-4">
                 Technical Skills
                 <div className="absolute pt-px bg-white mt-px top-full w-full">
-                <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
-                <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
+                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
+                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
                 </div>
             </div>
             <ul className="tracking-tight text-sm md:text-base w-10/12 emoji-list">
@@ -213,10 +212,16 @@ function Skills() {
                     I have extensive experience in web hosting and server management.
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div> My expertise includes <strong className="text-ubt-gedit-orange">DevOps, virtualization technologies, and Linux server administration across all operating systems!</strong></div>
+                    <div> My expertise includes <strong className="text-ubt-gedit-orange">DevOps, virtualization technologies, and Linux server administration!</strong></div>
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div>Also proficient in <strong className="text-ubt-gedit-orange">Windows administration</strong>.</div>
+                    <div> I am also proficient in <strong className="text-ubt-gedit-orange">Windows administration</strong> and desktop support.</div>
+                </li>
+                <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
+                    <div> I have extensive experience in both <strong className="text-ubt-gedit-orange">application Support and DevOps</strong>, with a strong grasp of web servers like Apache, Nginx, and OpenLiteSpeed, alongside database management with MySQL, MariaDB, and SQLite. I am proficient in scripting languages such as PHP, Perl, Python, and Ruby. My expertise extends to handling mail servers like Exim, Postfix, Dovecot, as well as DNS management using BIND.</div>
+                    <div> In terms of security, I am well-versed in SSL/TLS setup using Let's Encrypt and OpenSSL, and server management tools like phpMyAdmin and Softaculous. I have hands-on experience with firewalls like CSF, Fail2Ban, and handling FTP servers, cron jobs, and automated backups.</div>
+                    <div> Additionally, my work with server virtualization is primarily through Virtualizor, managing platforms such as KVM, Xen, OpenVZ, LXC, and Proxmox. I have dealt with storage technologies like LVM, Ceph, and NFS, and implemented robust networking, security, and backup solutions in virtual environments.</div>
+                    <div> In desktop support, I am highly familiar with operating systems (Windows, macOS, Linux), remote support tools like TeamViewer and AnyDesk, network security (Active Directory, VPNs, firewalls), hardware troubleshooting, software deployment, patch management, antivirus solutions, cloud services, user access control, and virtualization platforms like VMware and Hyper-V. I also have experience with helpdesk systems such as ServiceNow, Jira, and Zendesk, along with managing office suites like Office 365 and Google Workspace.</div>
                 </li>
             </ul>
             <div className="w-full md:w-10/12 flex mt-4">
@@ -247,6 +252,7 @@ function Skills() {
         </>
     );
 }
+
 
 function Projects() {
     const [projects, setProjects] = useState([]);
