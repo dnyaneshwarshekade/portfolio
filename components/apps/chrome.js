@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 export class Chrome extends Component {
     constructor() {
         super();
-        this.home_url = 'https://github.com/dnyaneshwarshekade';
+        this.home_url = 'https://dnyaneshwar.agni-byte.com';
         this.state = {
-            url: 'https://github.com/dnyaneshwarshekade',
-            display_url: "https://github.com/dnyaneshwarshekade", 
+            url: 'https://dnyaneshwar.agni-byte.com',
+            display_url: "https://dnyaneshwar.agni-byte.com", 
         }
     }
 
@@ -29,7 +29,7 @@ export class Chrome extends Component {
     }
 
     goToHome = () => {
-        this.setState({ url: this.home_url, display_url: "https://www.agni-byte.com" }); // Set the home URL to AgniByte
+        this.setState({ url: this.home_url, display_url: "https://dnyaneshwar.agni-byte.com" }); // Set the home URL to AgniByte
         this.refreshChrome();
     }
 
